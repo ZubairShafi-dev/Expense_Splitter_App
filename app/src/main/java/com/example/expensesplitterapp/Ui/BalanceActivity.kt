@@ -2,6 +2,7 @@ package com.example.expensesplitterapp.Ui
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,8 +21,9 @@ class BalanceActivity : AppCompatActivity() {
     private lateinit var balanceAdapter: BalanceAdapter
     private lateinit var persons: TextView
     private lateinit var amount: TextView
+    private lateinit var back: ImageView
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_balance)
@@ -30,6 +32,11 @@ class BalanceActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         amount = findViewById(R.id.amount)
         persons = findViewById(R.id.persons)
+        back = findViewById(R.id.backBtn)
+
+        back.setOnClickListener {
+            finish()
+        }
 
         val expense = intent.getSerializableExtra("expense_data") as? Expense
 
