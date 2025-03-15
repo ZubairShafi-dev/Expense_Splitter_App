@@ -2,7 +2,6 @@ package com.example.expensesplitterapp.Ui
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
@@ -11,7 +10,6 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.example.expensesplitterapp.Factory.UserViewModelFactory
-import com.example.expensesplitterapp.MainActivity
 import com.example.expensesplitterapp.R
 import com.example.expensesplitterapp.SharedPrefManager
 import com.example.expensesplitterapp.ViewModel.UserViewModel

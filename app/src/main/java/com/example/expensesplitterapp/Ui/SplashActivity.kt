@@ -5,11 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.expensesplitterapp.MainActivity
 import com.example.expensesplitterapp.R
 import com.example.expensesplitterapp.SharedPrefManager
 
@@ -31,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
                 finish()
             }
             else{
-                startActivity(Intent(this,MainActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
         }, 1500)

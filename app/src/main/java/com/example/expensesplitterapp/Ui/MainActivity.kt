@@ -1,4 +1,4 @@
-package com.example.expensesplitterapp
+package com.example.expensesplitterapp.Ui
 
 import android.app.Dialog
 import android.content.Intent
@@ -6,16 +6,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.expensesplitterapp.DataClasses.Expense
+import com.example.expensesplitterapp.ExpenseAdapter
 import com.example.expensesplitterapp.Factory.UserViewModelFactory
-import com.example.expensesplitterapp.Ui.BalanceActivity
-import com.example.expensesplitterapp.Ui.LoginActivity
+import com.example.expensesplitterapp.R
+import com.example.expensesplitterapp.SharedPrefManager
 import com.example.expensesplitterapp.ViewModel.UserViewModel
 import com.example.expensesplitterapp.databinding.ActivityMainBinding
 

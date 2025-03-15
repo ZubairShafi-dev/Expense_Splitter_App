@@ -23,7 +23,7 @@
             android:exported="false"
             android:theme="@style/Theme.ExpenseSplitterApp" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Ui.MainActivity"
             android:exported="false" />
         <activity
             android:name=".Ui.SplashActivity"

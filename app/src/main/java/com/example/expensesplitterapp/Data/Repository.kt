@@ -1,7 +1,6 @@
 package com.example.expensesplitterapp.Data
 
 import androidx.lifecycle.LiveData
-import com.example.expensesplitterapp.DataClasses.Balance
 import com.example.expensesplitterapp.DataClasses.Expense
 import com.example.expensesplitterapp.DataClasses.ExpenseSplit
 import com.example.expensesplitterapp.DataClasses.User
@@ -11,11 +10,9 @@ import kotlinx.coroutines.withContext
 class Repository(private val userDao: UserDao) {
     val allExpenses: LiveData<List<Expense>> = userDao.getAllExpenses()
 
-
     suspend fun registerUser(user: User) {
         userDao.insertUser(user)
     }
-
 
     suspend fun loginUser(email: String, password: String): User? {
         return withContext(Dispatchers.IO) {

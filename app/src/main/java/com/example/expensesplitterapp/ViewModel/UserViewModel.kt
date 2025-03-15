@@ -3,13 +3,10 @@ package com.example.expensesplitterapp.ViewModel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.expensesplitterapp.Data.AppDatabase
 import com.example.expensesplitterapp.Data.Repository
-import com.example.expensesplitterapp.DataClasses.Balance
 import com.example.expensesplitterapp.DataClasses.Expense
-import com.example.expensesplitterapp.DataClasses.ExpenseSplit
 import com.example.expensesplitterapp.DataClasses.User
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
